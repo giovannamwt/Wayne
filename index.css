@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body{
+    background-color: white;
+    font-family: 'inter', sans-serif;
+    
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5% 100px;
+
+}
+#nav-bar{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+main{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    
+}
+h1{
+    font-weight: 300;
+    font-size: 30px;
+}
+#btn-enter{
+    color: white;
+    text-decoration: none;
+}
+button{
+    background-color: #1A1D21;
+    color: white;
+    border-radius: 50px;
+    border-style: none;
+    padding: 15px 50px;
+    font-weight: 300;
+    font-size: 20px;
+    font-family: 'inter', sans-serif;
+    margin-top: 30px;
+}
+button:hover{
+    background-color: black;
+}
+label{
+    height: 60px;
+    border-radius: 50px;
+    border: 2px solid black;
+    display: flex;
+    padding: 0px 20px 0 20px;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0px;
+    margin-top: 10px;
+}
+label img{
+    width: 20px;
+    height: 20px;
+}
+input{
+    font-size: 18px;
+    border: none;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
