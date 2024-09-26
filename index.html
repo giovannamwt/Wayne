@@ -9,28 +9,64 @@
 <body>
     <header>
         <nav>
-            <img src="/images/logo.png" id="nav-logo" alt="">
+            <img src="./images/logo.png" id="nav-logo" alt="">
             <div id="nav-bar">
                 <h3>Home</h3>
             </div>
         </nav>
     </header>
     <main>
-    <img src="/images/img-login.svg" alt="" id="display-login">
+    <img src="./images/img-login.svg" alt="" id="display-login">
     <div class="form">
         <h1>Bem-vindo às Industrias Wayne.</h1>
-        <label for="input">
-            <img src="/images/user.png" alt="">
+        <label for="input" id="labuse">
+            <img src="./images/user.png" alt="">
             <input type="text" id="user" placeholder="Usuário">
         </label>
-        <label for="input">
-            <img src="/images/pas.png" alt="">
-            <input type="password" name="" id="password" placeholder="Senha">
+        <label for="input" id="labsen">
+            <img src="./images/pas.png" alt="">
+            <input type="password" name="" id="senha" placeholder="Senha">
         </label>
-        
-        
-        <button onclick="validation()"><a href="/welcome/welcome-func.html" id="btn-enter">Entrar</a></button>
+        <div id="msg-erro">
+            <img src="/images/info.svg" alt="">
+            <p>Usuário ou senha errados. Tente novamente.</p>
+        </div>
+        <button onclick="validation()">Entrar</button>
     </div>
+    <script>
+    let usuarios = [
+        { usuario: "alfred", senha: "12345", cargo: 1 },
+        { usuario: "coringa", senha: "12345", cargo: 2 },
+        { usuario: "bruce", senha: "12345", cargo: 3 }
+    ];
+
+    function validation(){
+        const user = document.getElementById("user").value
+        const senha = document.getElementById("senha").value
+        
+        const validUser = usuarios.find(u => u.usuario === user && u.senha === senha)
+
+        if (validUser) {
+            switch (validUser.cargo) {
+                case 1:
+                    window.location.href = "/welcome/welcome-func.html"
+                    break;
+                case 2:
+                    window.location.href = "/welcome/welcome-ger.html"
+                    break;
+                case 3:
+                    window.location.href = "/welcome/welcome-adm.html"
+                    break;
+                default:
+                    console.log("Cargo não identificado")
+            }
+        } else {
+            document.getElementById("labuse").classList.add("error")
+            document.getElementById("labsen").classList.add("error")
+            document.getElementById("msg-erro").classList.add("show")
+        }
+    }
+    </script>
     </main>
 </body>
 </html>

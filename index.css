@@ -57,6 +57,9 @@ label{
     gap: 0px;
     margin-top: 10px;
 }
+.error{
+    border: 2px solid rgb(193, 15, 15);
+}
 label img{
     width: 20px;
     height: 20px;
@@ -72,4 +75,15 @@ input{
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+.show{
+    display: flex !important;
+}
+#msg-erro{
+    color: rgb(193, 15, 15);
+    display: none;
+    text-align: center;
+}
+#msg-erro img{
+    width: 18px;
 }
