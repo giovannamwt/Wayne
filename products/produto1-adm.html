@@ -11,62 +11,37 @@
         <nav>
             <a href="../index.html"><img src="/images/logo.png" alt="arrow"></a>
             <div id="nav-bar">
-                <img src="/images/avatar-funcionario.png" alt="foto">
-                <h3>Nome da pessoa</h3>
-                <button>Sair</button>
+                <img src="/images/avatar-adm.png" alt="foto">
+                <h3>Bruce Wayne</h3>
+                <a href="/index.html"><button>Sair</button></a>
             </div>
         </nav>
     </header>
+
     <main>
+        <a href="/welcome/welcome-adm.html" id="back"><img src="/images/back.svg" id="voltar"></a>
+
         <h1>Armas</h1>
-        <div id="produtos">
-        <div class="item">
-            <img src="/images/arma1.png" alt="">
-            <p>Nome do produto</p>
-            <div class="container">
-                <div class="status"></div>
-                <p>Disponível</p>
-            </div>
-            <a href="#"><img src="/images/pencil-simple.svg" alt="editar" class="editar"></a>
-            <a href="#"><img src="/images/trash.svg" alt="editar" class="editar"></a>
- 
-        </div>
-        <div class="item">
-            <img src="/images/arma2.png" alt="">
-            <p>Nome do produto</p>
-            <div class="container">
-                <div class="status"></div>
-                <p>Disponível</p>
-            </div>
-            <a href="#"><img src="/images/pencil-simple.svg" alt="editar" class="editar"></a>
-            <a href="#"><img src="/images/trash.svg" alt="editar" class="editar"></a>
+        <div id="produtos"  >
+
+            
+
+            <form id="produtoForm">
+                <input type="text" id="nomeProduto" placeholder="Nome do Produto">
+                <!-- <input type="text" id="statusProduto" placeholder="Status"> -->
+                <select id="statusProduto">
+                    <option value="Disponível">Disponível</option>
+                    <option value="Indisponível">Indisponível</option>
+                </select>
+                <button type="submit">Adicionar Produto</button>
+            </form>
+
+            <div id="listaProdutos"></div>
+            <!-- <button onclick="obterProdutos()" id="bug">Caso a lista de produtos não apareça, clique aqui</button> -->
 
         </div>
-        <div class="item">
-            <img src="/images/arma3.png" alt="">
-            <p>Nome do produto</p>
-            <div class="container">
-                <div class="status"></div>
-                <p>Disponível</p>
 
-            </div>
-            <a href="#"><img src="/images/pencil-simple.svg" alt="editar" class="editar"></a>
-            <a href="#"><img src="/images/trash.svg" alt="editar" class="editar"></a>
-
-        </div>
-        <div class="item">
-            <img src="/images/arma4.png" alt="">
-            <p>Nome do produto</p>
-            <div class="container">
-                <div class="status"></div>
-                <p>Disponível</p>
-            </div>
-            <a href="#"><img src="/images/pencil-simple.svg" alt="editar" class="editar"></a>
-            <a href="#"><img src="/images/trash.svg" alt="editar" class="editar"></a>
-
-        </div>
-        </div>
-        <button id="add">Adcionar produto</button>
     </main>
+    <script async type="text/javascript" src="/products/produto-adm.js"></script>
 </body>
 </html>

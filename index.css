@@ -17,6 +17,11 @@ nav{
     align-items: center;
     gap: 50px;
 }
+
+a{
+    text-decoration: none;
+    color: black;
+}
 main{
     align-items: center;
     display: flex;
@@ -70,6 +75,11 @@ input{
     height: 50px;
     border-radius: 50px;
 }
+input:focus {
+    outline: none; /* Remove a borda padrão do navegador */
+    border: none; /* Remove a borda definida */
+}
+
 
 .form{
     display: flex;
@@ -82,8 +92,9 @@ input{
 #msg-erro{
     color: rgb(193, 15, 15);
     display: none;
-    text-align: center;
+    justify-content: center;
 }
 #msg-erro img{
     width: 18px;
 }
+

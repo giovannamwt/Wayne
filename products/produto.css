@@ -19,7 +19,6 @@ nav{
 }
 button{
     background-color: white;
-    
     color: black;
     border-style: none;
     padding: 0 20px;
@@ -60,13 +59,19 @@ h1{
     border-radius: 10px;
     height: 80px;
     width: 100%;
-    max-width:500px;
+    max-width:600px;
     align-items: center;
     padding: 0 50px;
     justify-content: space-between;
 }
-.status{
+.statusd{
     background-color: green;
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+}
+.statusi{
+    background-color: red;
     border-radius: 50px;
     width: 30px;
     height: 30px;
@@ -98,4 +103,41 @@ main{
     flex-direction: column;
     justify-content: center;
 
+}
+
+main button{
+    background-color: #1A1D21;
+    color: white;
+    padding: 10px;
+}
+main button:hover{
+    background-color: #373c41;
+}
+
+.excluir{
+    color: white;
+    width: 20px;
+}
+input{
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+select{
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+
+}
+
+#voltar{
+    width: 30px;
+    align-self: center;
+ }
+ #back{
+    align-self: center;
+
+ }
+#bug{
+    margin: 20px;
 }

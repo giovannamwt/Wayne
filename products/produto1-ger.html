@@ -4,61 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/products/produto.css">
-    <title>armas funcionario</title>
+    <title>armas gerente</title>
 </head>
 <body>
     <header>
         <nav>
-            <a href="../index.html"><img src="/images/logo.png" alt="arrow"></a>
+            <a href="../index.html"><img src="/images/logo.png" alt="logo"></a>
             <div id="nav-bar">
-                <img src="/images/avatar-funcionario.png" alt="foto">
-                <h3>Nome da pessoa</h3>
-                <button>Sair</button>
+                <img src="/images/avatar-gerente.png" alt="foto">
+                <h3>Coringa</h3>
+                <a href="/index.html"><button>Sair</button></a>
             </div>
         </nav>
     </header>
     <main>
+        <a href="/welcome/welcome-ger.html" id="back"><img src="/images/back.svg" id="voltar"></a>
+
         <h1>Armas</h1>
         <div id="produtos">
-        <div class="item">
-            <img src="/images/arma1.png" alt="">
-            <p>Nome do produto</p>
-            <div class="container">
-                <div class="status"></div>
-                <p>Disponível</p>
-            </div>
-            <a href="#"><img src="/images/pencil-simple.svg" alt="editar" class="editar"></a>
- 
-        </div>
-        <div class="item">
-            <img src="/images/arma2.png" alt="">
-            <p>Nome do produto</p>
-            <div class="container">
-                <div class="status"></div>
-                <p>Disponível</p>
-            </div>
-            <a href="#"><img src="/images/pencil-simple.svg" alt="editar" class="editar"></a>
-        </div>
-        <div class="item">
-            <img src="/images/arma3.png" alt="">
-            <p>Nome do produto</p>
-            <div class="container">
-                <div class="status"></div>
-                <p>Disponível</p>
+            <div id="listaProdutos"></div>
+        
+            <button onclick="obterProdutos()">Caso a lista de produtos não apareça, clique aqui</button>
 
-            </div>
-            <a href="#"><img src="/images/pencil-simple.svg" alt="editar" class="editar"></a>
         </div>
-        <div class="item">
-            <img src="/images/arma4.png" alt="">
-            <p>Nome do produto</p>
-            <div class="container">
-                <div class="status"></div>
-                <p>Disponível</p>
-            </div>
-            <a href="#"><img src="/images/pencil-simple.svg" alt="editar" class="editar"></a>
-        </div>
-    </div>
     </main>
+    <script async type="text/javascript" src="/products/produto1-ger.js"></script>
 </body>
 </html>
